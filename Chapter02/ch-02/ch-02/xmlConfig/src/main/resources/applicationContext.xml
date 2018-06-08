@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- CustomerServiceImpl Bean -->
+	<bean id="customerService"
+		class="com.packt.springhighperformance.ch2.bankingapp.service.Impl.CustomerServiceImpl" />
+
+	<!-- Inject customerService via constructor argument -->
+	<bean id="bankingService"
+		class="com.packt.springhighperformance.ch2.bankingapp.model.BankingService">
+		<constructor-arg ref="customerService" />
+	</bean>
+
+	<!-- Inject customerService via setter method -->
+	<!-- <bean id="bankingService" class="com.packt.springhighperformance.ch2.model.BankingService"> 
+		<property name="customerService" ref="customerService"></property> </bean> -->
+
+</beans>

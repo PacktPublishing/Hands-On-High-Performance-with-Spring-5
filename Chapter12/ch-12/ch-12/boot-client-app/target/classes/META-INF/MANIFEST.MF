@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: boot-client-app
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: test
+Implementation-Vendor-Id: com.spring.client
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/client-app
+Created-By: Maven Integration for Eclipse
+

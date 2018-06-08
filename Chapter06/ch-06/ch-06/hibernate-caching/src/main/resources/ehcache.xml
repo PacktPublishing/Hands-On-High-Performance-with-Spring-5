@@ -1,0 +1,19 @@
+<ehcache>
+<defaultCache
+            name="defaut"
+            maxElementsInMemory="5"
+            eternal="false"
+            timeToIdleSeconds="20"
+            timeToLiveSeconds="20"
+            overflowToDisk="false"
+            diskPersistent="false"
+            memoryStoreEvictionPolicy="LRU"
+            /> 
+            
+            <cache name="org.hibernate.cache.internal.StandardQueryCache"
+       maxElementsInMemory="500"
+       eternal="false"
+       timeToIdleSeconds="600"
+       timeToLiveSeconds="3600"/>
+    <cache name="com.packt.springhighperformance.ch6.bankingapp.model.Account" maxElementsInMemory="1000" timeToIdleSeconds="0"   timeToLiveSeconds="10"/>
+</ehcache>

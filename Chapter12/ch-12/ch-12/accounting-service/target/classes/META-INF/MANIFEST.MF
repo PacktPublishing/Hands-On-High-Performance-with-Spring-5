@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: accounting-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: test
+Implementation-Vendor-Id: com.packt.springhighperformance.ch09
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ch-09-accounting-service
+Created-By: Maven Integration for Eclipse
+

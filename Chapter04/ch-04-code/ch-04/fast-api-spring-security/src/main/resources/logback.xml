@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- the debug attribute below does not configure debug level. It is for enabling logback startup messages -->
+<configuration debug="false">
+    <property name="log.pattern" value="%date{HH:mm:ss.SSS} RDS %-5level %logger{0} - %msg%n" />
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="${root.level:-WARN}">
+        <appender-ref ref="console" />
+    </root>
+    <logger name="com.pact.springhighperformance.ch4.bankingapp" level="DEBUG" />
+    <logger name="org.springframework.jdbc" level="DEBUG" />
+    <logger name="org.springframework.security.core.userdetails" level="DEBUG" />
+</configuration>

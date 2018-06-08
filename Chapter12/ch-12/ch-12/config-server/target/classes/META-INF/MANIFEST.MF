@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: config-server
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: test
+Implementation-Vendor-Id: com.spring.server.config
+Build-Jdk: 1.8.0_152
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-config-server
+Created-By: Maven Integration for Eclipse
+
